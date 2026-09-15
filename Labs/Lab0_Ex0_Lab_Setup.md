@@ -56,7 +56,7 @@ lab:
     >
     >一部のテナントでは、**[ユーザーと管理者のアクティビティの記録を開始する]** を選択しても監査が有効にならないことがあります。  
     >
-    >このような場合は、代わりに PowerShell を使用して監査を有効にすることができます。
+    >このような場合は、代わりにClient 1 VM (SC-401-CL1) に **SC-401-CL1\admin** アカウントでログインし、 PowerShell を使用して監査を有効にすることができます。
     >
     >1. Windows ボタンを右クリックし、**[ターミナル (管理者)]** を選択して、管理者特権のターミナル ウィンドウを開きます。  
     >
@@ -126,15 +126,15 @@ Microsoft 365 で監査を正常に有効にしました。
 
 このタスクでは、インサイダー リスク管理の分析とデータ共有を有効にします。
 
-1. Client 1 VM (SC-401-CL1) には引き続き **SC-401-CL1\admin** アカウントでログインし、Microsoft Purview には MOD 管理者アカウントでログインしている必要があります。
+1. Microsoft Purview には MOD 管理者アカウントでログインしている必要があります。
 
 1. Microsoft Purview で、**[設定]** > **[インサイダー リスク管理]** > **[分析]** に移動します。
 
 1. これらの設定を **[オン]** に切り替えます。
 
-   - **テナント レベルの分析情報を表示する**
+   - **テナント レベルで分析情報を表示する**
 
-   - **ユーザー レベルの分析情報を表示する**
+   - **ユーザー レベルで分析情報を表示する**
 
 1. ページの下部にある **[保存]** を選択します。
 
@@ -146,60 +146,13 @@ Microsoft 365 で監査を正常に有効にしました。
 
 インサイダー リスク管理の分析とデータ共有を有効にしました。
 
-<!---
 
-Removing this task in favor of using lab passwords
-
-## Task 4 - Set user passwords for lab exercises
-
-In this task, you'll set passwords for the user accounts needed for the labs.
-
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged in as the MOD Administrator in Microsoft 365.
-
-1. Open **Microsoft Edge** and navigate to **`https://admin.microsoft.com`** to log into the Microsoft 365 admin center as the MOD Administrator, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant prefix provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
-
-    > [!Note] **Note: Skip MFA for the Microsoft 365 Admin center**
-    >
-    > In some tenants, you might see a Portal MFA Enforcement prompt when signing in. If this prompt appears:
-    >
-    > - Select **Skip for now** to temporarily delay MFA setup.
-    >
-    >   ![Screenshot showing the option to postpone MFA.](../Media/postpone-mfa.png)
-    >
-    > - On the **Let us know why you're skipping MFA** dialogue, select any justification, then select **Send and skip**.
-    >
-    > This postpones MFA enforcement in the Microsoft 365 Admin center for the tenant and allows you to proceed with the lab.
-
-1. On the left navigation pane, expand **Users** then select **Active users**.
-
-1. Select the checkbox to the left of **Joni Sherman**, **Lynne Robbins**, and **Megan Bowen**.
-
-   These accounts will be used throughout the lab exercises.
-
-   ![Screenshot showing user accounts that need to be reset.](../Media/user-accounts.png)
-
-1. Select the **Reset password** button from the top navigation to reset all three passwords.
-
-   ![Screenshot showing the Reset password button in the Microsoft 365 admin center.](../Media/reset-password-button.png)
-
-1. In the **Reset Password** flyout page on the right, ensure that both checkboxes are deselected.
-
-   This will ensure that you can select a password for the three users being used for exercises, and that these passwords won't need to be reset when you first sign in.
-
-1. In the **Password** field, enter a password you can remember to reset the user passwords to be used in future exercises.
-
-1. At the bottom of the **Reset password** flyout page, select the **Reset password** button.
-
-1. On the **Passwords have been reset** page, you should see the three user accounts that have been reset. At the bottom of this flyout page, select **Close**.
-
-You have successfully reset passwords for lab exercises.
--->
 
 ## タスク 4 - Microsoft Defender XDR を初期化する
 
 このタスクでは、Microsoft Defender に移動し、Microsoft Defender XDR が初期化されるまで待機します。
 
-1. Client 1 VM (SC-401-CL1) には引き続き **SC-401-CL1\admin** アカウントでログインし、Microsoft Purview には MOD 管理者アカウントでログインしている必要があります。
+1. Microsoft Purview には MOD 管理者アカウントでログインしている必要があります。
 
 1. **Microsoft Edge** で、**`https://security.microsoft.com/`** に移動して Microsoft Defender を開きます。
 
@@ -221,28 +174,20 @@ Microsoft Defender XDR を初期化しています。 セットアップが完�
 
 1. **Microsoft Edge** で **`https://entra.microsoft.com/`** に移動して Microsoft Entra を開きます。
 
-1. **[最初にアプリを取得します]** 画面でデバイスのアプリ ストアから **Microsoft Authenticator** アプリをインストールするか、既にインストールされている場合はそれを開きます。
+1. モバイル デバイスで MFA の要求を承認します。
 
-   ![多要素認証の [アカウントのセキュリティ保護] 画面を示すスクリーンショット。](../Media/mfa-entra.png)
+   「You need to set up multifactor authentication」 → **Set up now**
 
-   - 別のアプリを使用する場合は、**[別の認証アプリを使用します]** を選択し、画面の指示に従います。
+   「アカウントをセキュリティ保護しましょう」 → **次へ**
 
-1. [**次へ**] を選択します。
+   「Microsoft Authenticator のインストール」 → **次へ**
 
-1. **[アカウントの設定]** 画面で、携帯電話の指示に従って通知を許可し、**[次へ]** を選択します。  
+   「アプリでアカウントをセットアップする」 → **次へ**
 
-   - Microsoft Authenticator アプリのインストールと構成を既に完了している場合は、この画面が表示されないことがあります。 その場合は、次の手順に進みます。
+   「QR コードをスキャンします」 → QRコードをスマートフォンの Microsoft Authenticator でスキャン → **次へ**
 
-1. **[QR コードをスキャンします]** 画面で、デバイスの Microsoft Authenticator アプリを使用して画面に表示されている QR コードをスキャンし、**[次へ]** を選択します。
+   画面に表示された2桁の番号をMicrosoft Authenticatorに入力し → **完了**
 
-1. ブラウザーに表示されている番号を携帯電話に入力してサインイン要求を承認します。
-
-1. 要求を承認すると、**[通知が承認されました]** 画面が表示されます。 [**次へ**] を選択します。
-
-1. **[成功]** 画面の **[既定のサインイン方法]** に **[Microsoft Authenticator]** が表示されていることを確認し、**[完了]** を選択します。
-
-1. 再度サインインを求められた場合は、携帯電話でサインイン要求を承認して本人確認を行います。
-
-1. 承認が完了すると、**Microsoft Entra 管理センター**にリダイレクトされます。
+1. サインインの維持を求められた場合は **いいえ** を選択します。**Microsoft Entra 管理センター**にリダイレクトされます。
 
 Microsoft Entra 管理者アカウントの多要素認証の構成と確認はこれで完了です。
