@@ -34,7 +34,7 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 
 このタスクでは、秘密度ラベルの共同編集を有効にします。これにより、SharePoint と OneDrive のファイルの秘密度ラベルも有効になります。
 
-1. 引き続き、**SC-401-CL1\admin** アカウントで Client 1 VM (SC-401-CL1) にログインし、Joni Sherman として Microsoft Purview にログインしておく必要があります。
+1. 引き続き、Joni Sherman として Microsoft Purview にログインしておく必要があります。
 
 1. **Microsoft Edge** を開き、`https://purview.microsoft.com` に移動します。
 
@@ -48,34 +48,9 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 
 これで、SharePoint および OneDrive での秘密度ラベルのサポートが有効になりました。
 
-<!--
-
-## Task 2 – Migrate to the modern label scheme
-
-With sensitivity label support enabled, you'll confirm that the tenant uses the modern label scheme. If it still uses the classic scheme, you'll migrate to the modern one to ensure new labels and policies use the latest configuration model.
-
-1. You should still be logged into Client 1 VM (SC-401-CL1) as the **SC-401-CL1\admin** account and logged into Microsoft Purview as Joni Sherman.
-
-1. In the left navigation, select **Information Protection** > **Sensitivity labels**.
-
-1. On the **Sensitivity labels** page, review the information box for **Migrate to the modern label scheme**, then select **Get started**.
-
-1. In the **Migrate to the modern label scheme** flyout, review the summary to understand how existing labels and policies will be affected.
-
-1. At the bottom of the flyout, select **Migrate**.
-
-1. In the **Confirm migration to modern label scheme** dialog box, select **Confirm migration**.
-
-    > [!Note] **Note**: The migration process might take a few minutes to complete.
-
-You've successfully migrated your tenant to the modern sensitivity label scheme. New labels and policies you create will now use the modern configuration experience.
-
--->
 ## タスク 2 – ラベル グループを作成する
 
 このタスクでは、内部秘密度ラベルを整理するためのラベル グループを作成します。 ラベル グループは、部署や事業単位の分類など、関連するラベルのコンテナーとして機能します。
-
-1. 引き続き Client 1 VM (SC-401-CL1) に **SC-401-CL1\admin** アカウントでログインしている必要があります。
 
 1. **Microsoft Edge** で、 `https://purview.microsoft.com` に移動します。
 
@@ -161,8 +136,6 @@ You've successfully migrated your tenant to the modern sensitivity label scheme.
 
 次に、人事部門のユーザーがドキュメントにラベルを適用できるように、"内部" ラベル グループから人事ラベルを発行します。
 
-1. Client 1 VM (SC-401-CL1) には **SC-401-cl1\admin** アカウントでログインし、Microsoft Purview には **Joni Sherman** としてログインしておく必要があります。
-
 1. **Microsoft Edge** で、Microsoft Purview ポータルのタブがまだ開かれているはずです。 そうでない場合は、**`https://purview.microsoft.com`** > **[ソリューション]** > **[Microsoft Information Protection]** > **[秘密度ラベル]** に移動します。
 
 1. **[秘密度ラベル]** ページで **[ラベルを発行]** を選択します。
@@ -206,8 +179,6 @@ You've successfully migrated your tenant to the modern sensitivity label scheme.
 ## タスク 5 – 自動ラベル付けを構成する
 
 次に、財務データの子ラベルを作成し、クレジット カードや銀行の支店番号などの財務識別子を含むコンテンツに自動的に適用されるように構成します。
-
-1. 引き続き Client 1 VM (SC-401-CL1) に **SC-401-cl1\admin** アカウントでログインしている必要があります。
 
 1. **Microsoft Edge** で、 `https://purview.microsoft.com` に移動し、**Joni Sherman** として Microsoft Purview ポータルにログインします。
 
@@ -289,8 +260,6 @@ You've successfully migrated your tenant to the modern sensitivity label scheme.
 ## タスク 6 - 機密コンテンツの DKE ラベルを作成して発行する
 
 次に、"内部" グループに、二重キー暗号化 (DKE) と動的透かしを使用して機密の法的コンテンツを保護する子ラベルを作成します。
-
-1. 引き続き Client 1 VM (SC-401-CL1) に **SC-401-cl1\admin** アカウントでログインしている必要があります。
 
 1. **Microsoft Edge** で、 `https://purview.microsoft.com` に移動し、**Joni Sherman** として Microsoft Purview ポータルにログインします。
 
@@ -387,8 +356,6 @@ You've successfully migrated your tenant to the modern sensitivity label scheme.
 
 秘密度ラベルを作成して公開したので、次に、Microsoft Purview と Microsoft Defender for Cloud Apps を統合します。 この統合により、Defender で、ファイルの秘密度ラベルをスキャンし、ファイルの監視を適用できるようになります。
 
-1. Client 1 VM (SC-401-CL1) には **SC-401-CL1\admin** でログインし、Joni Sherman としてログインしておく必要があります。
-
 1. **Microsoft Edge** を開き、`https://security.microsoft.com` に移動して **Microsoft Defender** を開きます。
 
 1. 左側のナビゲーションで **[設定]** を選択し、**[クラウド アプリ]** を選択します。
@@ -417,60 +384,7 @@ You've successfully migrated your tenant to the modern sensitivity label scheme.
 
 Defender for Cloud Apps で Microsoft Purview 統合を有効にしました。 Defender で秘密度ラベルを検出し、ポリシー評価とガバナンス アクションのためにファイルを監視できるようになりました。
 
-<!---
 
-NOTE - Reworking task 8 due to tenant issue
-
-## Task 8 – Create a file policy to auto-label externally shared files
-
-Now that label scanning is enabled, you'll create a file policy that applies the **Highly Confidential - Project - Falcon** sensitivity label to files in the Mark 8 Project folders that are shared outside your organization. This policy is categorized as DLP because it protects sensitive data from unintended exposure.
-
-1. In **Microsoft Defender**, navigate to **Cloud apps** > **Policies** > **Policy management**.
-
-1. Select the **Information protection** tab, then select **Create policy** > **File policy**.
-
-    ![Screenshot showing where to navigate to create a file policy in Microsoft Defender.](../Media/file-policy-defender.png)
-
-1. On the **Create file policy** page, configure:
-
-   - **Policy name**: `Auto-label external sharing for Project Falcon files`
-
-   - **Policy severity**: **High**
-
-   - **Category**: **DLP**
-
-   - **Apply to**: **Selected folders**
-
-      - Select **Add folder(s)**, then search for `Project` in the **File name** field.
-
-      - Select the checkbox for the **Mark 8 Project Team Notebook** and **Mark 8 Project team** SharePoint folders.
-
-      - Select **Done** to close the **Select a folder** window.
-
-   - In the **Files matching all of the following section**:
-
-      - For the first filter, configure the dropdowns to: **Access level equals external**
-
-      - For the second filter, configure the dropdowns to: **Last modified after (date)** and use today's date
-
-          ![Screenshot showing the filter settings in Defender.](../Media/configure-file-policy-filter.png)
-
-   - Under **Governance actions**, expand **Microsoft OneDrive for Business**:
-
-      - Select the checkbox for **Apply sensitivity label**
-
-      - In the dropdown select **Highly Confidential-Project - Falcon**
-
-   - Repeat the same process for **Microsoft SharePoint Online**
-
-      - Select the checkbox for **Apply sensitivity label**
-
-      - Select **Highly Confidential-Project - Falcon** from the dropdown
-
-1. Select **Create** to finish creating the file policy.
-
-You've created a file policy that applies a highly confidential sensitivity label to externally shared files located in the Mark 8 Project folders in SharePoint and OneDrive. Once a matching file is detected, Defender for Cloud Apps will apply the label automatically.
--->
 
 ## タスク 8 - 外部共有ファイルにラベルを付けるファイル ポリシーを作成する
 
