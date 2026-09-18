@@ -1,13 +1,3 @@
----
-lab:
-  title: 演習 1 - 保持ポリシーを構成する
-  module: Module 3 - Implement and manage retention
-  description: Microsoft Purview で自動適用やアダプティブ スコープを含む保持ラベルとポリシーを作成および管理し、データ回復を検証します。
-  duration: 90 minutes
-  level: 200
-  islab: true
----
-
 ## WWL テナント - 使用条件
 
 講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。

@@ -1,15 +1,3 @@
----
-lab:
-  title: 演習 2 - コンテンツ検索を実行する
-  module: Module 5 - Audit and search activity in Microsoft Purview
-  description: 電子情報開示のアクセス許可を割り当て、キーワードベースのコンテンツ検索を実行して、Microsoft 365 全体で機密データを明らかにします。
-  duration: 30 minutes
-  level: 100
-  islab: true
-  primarytopics:
-    - Microsoft Purview
----
-
 ## WWL テナント - 使用条件
 
 講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。
@@ -27,13 +15,11 @@ lab:
 1. 電子情報開示のアクセス許可を割り当てる
 1. 機密性の高い財務用語を使用してコンテンツを検索する
 
-**推定所要時間:** 20 ～ 30 分
+**推定所要時間:** 20 分
 
 ## 手順 1 - 電子情報開示アクセス許可を割り当てる
 
 このタスクでは、Microsoft Purview でコンテンツ検索を実行できるように、Joni Sherman に電子情報開示アクセス許可を割り当てます。
-
-1. **SC-401-CL1\admin** アカウントで Client 1 VM (SC-401-CL1) にログインします。
 
 1. InPrivate ウィンドウで **Microsoft Edge** を開くには、タスク バーから Microsoft Edge を右クリックし、**[新しい InPrivate ウィンドウ]** を選択します。
 

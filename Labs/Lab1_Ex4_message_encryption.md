@@ -1,17 +1,3 @@
----
-lab:
-  title: 演習 4 - Microsoft Purview Message Encryption をデプロイする
-  module: Module 1 - Implement Information Protection
-  description: Microsoft Purview Message Encryption を適用するメール フロー ルールを構成し、免責事項を追加して、暗号化されたメールの動作を検証します。
-  duration: 45 minutes
-  level: 100
-  islab: true
-  primarytopics:
-    - Microsoft Purview
----
-
-
-
 # ラボ 1 - 演習 4 - Microsoft Purview Message Encryption をデプロイする
 
 Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、部門間で交換される機密情報を保護するために、セキュリティで保護されたメール通信を実装しています。 この取り組みの一環として、Exchange 管理センターを使用して Microsoft Purview Message Encryption (OME) を構成し、財務部門から送信されたメッセージを自動的に暗号化し、メッセージが安全に送信されたことを明確に通知します。

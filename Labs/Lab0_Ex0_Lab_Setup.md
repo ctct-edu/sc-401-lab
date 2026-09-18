@@ -1,13 +1,3 @@
----
-lab:
-  title: ラボのセットアップ - 管理環境を準備する
-  module: Lab setup
-  description: 管理タスク用の環境を準備するために、Microsoft Purview と Defender のコア機能、アクセス許可、サービスを構成します。
-  duration: 45 minutes
-  level: 100
-  islab: true
----
-
 ## WWL テナント - 使用条件
 
 講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。

@@ -1,15 +1,3 @@
----
-lab:
-  title: 演習 1 - 監査ログを検索する
-  module: Module 5 - Audit and search activity in Microsoft Purview
-  description: Microsoft Purview で監査ログ アクティビティを検索してエクスポートし、DLP イベントの監査アイテム保持ポリシーを構成します。
-  duration: 45 minutes
-  level: 100
-  islab: true
-  primarytopics:
-    - Microsoft Purview
----
-
 ## WWL テナント - 使用条件
 
 講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。
@@ -28,7 +16,7 @@ lab:
 1. 監査の検索結果をエクスポートする
 1. 監査アイテム保持ポリシーを作成する
 
-**推定所要時間:** 30 ～ 45 分
+**推定所要時間:** 30 分
 
 ## タスク 1 – DLP 関連のアクティビティを検索する
 

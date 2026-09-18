@@ -1,15 +1,3 @@
----
-lab:
-  title: 演習 2 - 適応型保護を実装する
-  module: Module 4 - Implement Insider Risk Management
-  description: インサイダー リスク ポリシーと DLP および条件付きアクセスをリンクし、Microsoft Purview と Entra でリスクベースの制御を適用して、適応型保護を構成します。
-  duration: 60 minutes
-  level: 200
-  islab: true
-  primarytopics:
-    - Microsoft Purview
----
-
 # ラボ 4 - 演習 2 - 適応型保護を実装する
 
 あなたは、Contoso Ltd の情報セキュリティ管理者である Joni Sherman です。あなたの役割は、機密データの保護とインサイダー リスクへの対応です。 保護を強化するために、Microsoft Purview の適応型保護を有効にします。これは、インサイダー リスク レベルに基づいてデータ損失防止 (DLP) の実施を動的に調整します。
@@ -21,11 +9,9 @@ lab:
 1. 適応型保護を使用して条件付きアクセスを構成する
 1. 適応型保護を有効にする
 
-**推定所要時間:** 45-60 分
+**推定所要時間:** 45分
 
 ## タスク 1 – 適応型保護にインサイダー リスク ポリシーを割り当てる
-
-1. **SC-401-cl1\admin** アカウントで Client 1 VM (SC-401-CL1) に ログインします。
 
 1. **Microsoft Edge** で **`https://purview.microsoft.com`** に移動し、**Joni Sherman** (`JoniS@WWLxZZZZZZ.onmicrosoft.com`) としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
 

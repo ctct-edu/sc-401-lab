@@ -1,16 +1,3 @@
----
-lab:
-  title: 秘密度、DLP、およびアイテム保持ポリシーを検証する
-  module: 'Policy validation - Validate sensitivity, DLP, and retention policies'
-  description: Microsoft 365 アプリ全体で、秘密度ラベル、DLP ポリシー、保持ラベルの動作をテストして検証します。
-  duration: 30 minutes
-  level: 100
-  islab: true
-  primarytopics:
-    - Microsoft 365
-    - Microsoft 365 Apps
----
-
 ## WWL テナント - 使用条件
 
 講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。
@@ -29,7 +16,7 @@ lab:
 1. Outlook で DLP ポリシーをトリガーする
 1. SharePoint で保持ラベルと機密度ラベルを適用する
 
-**推定所要時間:** 20 ～ 30 分
+**推定所要時間:** 20分
 
 ## タスク 1 – Word で秘密度ラベルを適用する
 
@@ -101,7 +88,7 @@ DLP ポリシーによって、機密情報である従業員 ID のメールに
 
 保持の構成をテストするには、SharePoint に保存されているドキュメントに保持ラベルを適用し、秘密度ラベルも使用可能になってることを確認します。
 
-1. Client 1 VM (SC-401-CL1) には引き続き **SC-401-CL1\admin** アカウントでログインし、Microsoft 365 には Joni Sherman としてログインしている必要があります。
+1. Client 1 VM (SC-401-CL1) に **SC-401-CL1\admin** アカウントでログインします。
 
 1. Microsoft Edge で、左上のアプリ起動ツールを選択し、**[SharePoint]** を選択します。
 

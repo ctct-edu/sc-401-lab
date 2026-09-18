@@ -1,16 +1,3 @@
----
-lab:
-  title: 演習 1 - AI 環境でデータを保護する
-  module: Module 6 - Protect data in AI environments
-  description: DLP、インサイダー リスク、コミュニケーション コンプライアンスのポリシーを作成して確認し、AI 用 Microsoft Purview DSPM を使って AI 対話で機密データを保護するためのデータ評価を実行します。
-  duration: 45 minutes
-  level: 200
-  islab: true
-  primarytopics:
-    - Microsoft Copilot
-    - Microsoft Purview
----
-
 ## WWL テナント - 使用条件
 
 講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。
@@ -30,13 +17,11 @@ lab:
 1. AI アプリでの非倫理的な動作を検出する
 1. データ評価を実行してラベル付けされていないコンテンツを検出する
 
-**推定所要時間:** 30 ～ 45 分
+**推定所要時間:** 30 分
 
 ## タスク 1 - AI 用 DSPM を使用して生成 AI サイトの DLP ポリシーを作成する
 
 AI アシスタントによるデータ損失のリスクを軽減するには、まず、データ セキュリティの強化に関する推奨事項を使用して DLP ポリシーを作成します。 このポリシーでは、適応型保護を使用して、ChatGPT、Copilot in Edge、Chrome、Firefox などの AI ツールへの機密データの貼り付けまたはアップロードを制限します。
-
-1. **SC-401-cl1\admin** アカウントで Client 1 VM (SC-401-CL1) に ログインします。
 
 1. **Microsoft Edge** で **`https://purview.microsoft.com`** に移動し、**Joni Sherman** (`JoniS@WWLxZZZZZZ.onmicrosoft.com`) としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
 

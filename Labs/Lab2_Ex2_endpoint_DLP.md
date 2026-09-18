@@ -1,13 +1,3 @@
----
-lab:
-  title: 演習 2 - エンドポイント DLP を実装および管理する
-  module: Module 2 - Implement Data Loss Prevention
-  description: デバイスをオンボードし、エンドポイント DLP ポリシーを作成して、Windows デバイス上の機密データを保護するようにエンドポイントの設定とブラウザーのサポートを構成します。
-  duration: 90 minutes
-  level: 200
-  islab: true
----
-
 # ラボ 2 - 演習 2 - エンドポイント DLP を実装および管理する
 
 Contoso Ltd. で情報セキュリティ管理者として新しく採用された Joni Sherman は、会社のデバイスの DLP コントロールを強化するよう求められました。 一部の従業員は、顧客の機密情報を USB ドライブにコピーしており、データ漏えいのリスクが高まっています。 このラボでは、Joni がこれらの転送をブロックするエンドポイント DLP ポリシーを構成します。

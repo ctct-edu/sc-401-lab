@@ -1,18 +1,3 @@
----
-lab:
-  title: 演習 3 - 秘密度ラベルを作成して管理する
-  module: Module 1 - Implement Information Protection
-  description: Microsoft Purview と Defender for Cloud Apps で、暗号化、自動ラベル付け、ポリシー統合を使って秘密度ラベルを構成して発行します。
-  duration: 90 minutes
-  level: 200
-  islab: true
-  primarytopics:
-    - Microsoft Defender
-    - Microsoft Defender for Cloud
-    - Microsoft Defender for Cloud Apps
-    - Microsoft Purview
----
-
 # ラボ 1 - 演習 3 - 秘密度ラベルを作成して管理する
 
 Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、組織全体のデータ保護を強化するために、最新の秘密度ラベル付けフレームワークをデプロイしています。 Joni は、暗号化、自動ラベル付け、二重キー暗号化 (DKE) など、コンテンツを分類して保護するための秘密度ラベル グループとラベルを作成して公開します。 また、Microsoft Purview と Microsoft Defender for Cloud Apps を統合して、クラウドの場所に格納されているファイルにデータ保護制御を拡張します。
