@@ -92,9 +92,9 @@ Microsoft Purview ポータルでインサイダー リスク管理を操作す�
 
 1. Microsoft Edge で `https://security.microsoft.com` に進み、Microsoft Defender に移動します。
 
-1. 左側のナビゲーション ウィンドウで、**[設定]** > **[エンドポイント]** > **[高度な機能]** を選択します。
+1. 左側のナビゲーション ウィンドウで、**[システム]** > **[設定]** > **[エンドポイント]** > **[オプション機能]** を選択します。
 
-1. 下にスクロールし、**[エンドポイントアラートを Microsoft コンプライアンス センターと共有する]** トグルを選択して **[オン]** にして有効にします。
+1. 下にスクロールし、**[エンドポイント アラートを Microsoft コンプライアンス センターと共有]** トグルを選択して **[オン]** にして有効にします。
 
    ![[Microsoft コンプライアンス センターとのエンドポイントの共有] トグルを示すスクリーンショット。](../Media/enable-irm-in-mde.png)
 
@@ -162,11 +162,10 @@ Defender for Endpoint と Microsoft Purview 間のアラートの共有を正常
 
 1. **[ポリシー テンプレートの選択]** ページで、**[優先ユーザーによるセキュリティ ポリシー違反]** を選択し、[次へ] を選択します。
 
-1. **[ポリシーの名前の設定] ページ**で、以下を入力します。
-
+1. **[ポリシーの名前を設定] ページ**で、以下を入力します。
    - **名前**: `Security policy violations - Priority users`
    - **説明**: `Detects Defender for Endpoint alerts for risky activity by priority users, such as malware or disabled protections.`
-
+   
 1. [**次へ**] を選択します。
 
 1. **[ユーザー、グループ、アダプティブ スコープの選択]** ページで、**[優先度の高いユーザー グループを追加または編集する]** を選択します。
