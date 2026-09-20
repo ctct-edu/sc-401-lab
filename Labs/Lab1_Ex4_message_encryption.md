@@ -100,7 +100,7 @@ Microsoft Purview Message Encryption を使用して財務部門から送信さ�
 
 暗号化ルールがアクティブになり、財務部門から送信されるメッセージに対して Microsoft Purview Message Encryption が適用されます。 今後、財務ユーザーから送信されるメッセージは自動的に暗号化され、Contoso Ltd. の免責事項が含まれるようになります。
 
-## (オプション) タスク 4 - メッセージの暗号化を検証する
+## タスク 4 - メッセージの暗号化を検証する
 
 このタスクでは、財務部門のメンバーからテスト メールを送信し、Microsoft Purview Message Encryption が自動的に適用され、セキュリティで保護されたメッセージの通知が受信者に表示されることを確認します。
 
@@ -122,6 +122,14 @@ Microsoft Purview Message Encryption を使用して財務部門から送信さ�
 
     > [!Note] **注:** 迷惑メール フォルダーに Lynne Robbins からのメッセージがあるかどうかを確認する必要があるかもしれません。
 
-1. 暗号されたメッセージを確認します。 メールの下部に "**このメールは Contoso Ltd. によって暗号化され、安全に送信されています(This email has been encrypted and sent securely by Contoso Ltd.)** " というメッセージが表示されます。
+1. **[Read the message]** を選択します。
+
+1. **[ワンタイム パスコードを使用してサインイン]** を選択して、制限時間付きパスコードを受け取ります。
+
+1. 個人用のメール ポータルを開き、**"Your one-time passcode to view the message"** という件名のメッセージを開きます。
+
+1. パスコードをコピーしてポータルに貼り付け、**[続行]** を選択します。
+
+1. 暗号されたメッセージを確認します。 メールの下部に "**This email has been encrypted and sent securely by Contoso Ltd. **" というメッセージが表示されます。
 
 財務部門からのメッセージが自動的に暗号化されることと Contoso の免責事項が含まれることの検証と、Microsoft Purview Message Encryption が想定どおりに動作していることの確認は、これで完了です。
