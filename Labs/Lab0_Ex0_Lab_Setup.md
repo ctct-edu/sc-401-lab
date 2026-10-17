@@ -18,7 +18,7 @@
 1. Microsoft Defender XDR を初期化する
 1. Microsoft Entra で多要素認証を構成する
 
-**推定所要時間:** 30分
+**推定所要時間:** 20分
 
 ## タスク 1 - Microsoft Purview ポータルで監査を有効にする
 

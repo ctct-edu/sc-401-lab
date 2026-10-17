@@ -13,7 +13,7 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 1. Microsoft Purview と Defender for Cloud Apps との統合を有効にする
 1. 外部共有ファイルにラベルを付けるファイル ポリシーを作成する
 
-**推定所要時間:** 60 分
+**推定所要時間:** 45 分
 
 ## タスク 1 - 秘密度ラベルのサポートを有効にする
 
