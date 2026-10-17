@@ -66,7 +66,7 @@ Microsoft Purview ポータルでインサイダー リスク管理を操作す�
 
 1. Microsoft Purview ポータルで、**[ソリューション]** > **[インサイダー リスク管理]** > **[ポリシー]** を選択します。
 2. 「ポリシー」 ページで、**[ポリシーを作成]** を選択してから、**[カスタム ポリシー]** を選択します。
-3. 「ポリシーテンプレートの選択」ページで **[データ漏洩]**  を選択し、**[次へ] **を選択します。
+3. 「ポリシーテンプレートの選択」ページで **[データ漏洩]**  を選択し、**[次へ] ** を選択します。
 4. 「ポリシーの名前を設定」ページに以下を入力してください:
    - **名前**:`Data leaks policy`
    - **説明**:`Detects risky data exfiltration activity using Office, device, and cumulative exfiltration indicators.`
