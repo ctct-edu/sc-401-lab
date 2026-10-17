@@ -195,7 +195,7 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 
       ![EDM 分類子を作成した後のスキーマ名を示すスクリーンショット。](../Media/edm-copy-schema-name.png)
 
-1. スキーマ名をキャプチャしたら、**[完了]** を選択します。
+1. **[完了]** を選択します。
 
 1. Microsoft Purview ポータルのブラウザーは開いたままにします。
 
@@ -205,9 +205,9 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 
 このタスクでは、EDM Upload Agent ツールを使用して、EDM ベースの分類の機密情報の種類の実際のデータをハッシュしてアップロードします。
 
-1. **Client 1 VM (SC-401-CL1) には SC-401-CL1\admin アカウントでログイン**し、Microsoft 365 には **Joni Sherman** としてログインしておく必要があります。
+1. **Client 1 VM (SC-401-CL1) には SC-401-CL1\admin アカウントでログイン**します。
 
-1. **Microsoft Edge** で、**`https://go.microsoft.com/fwlink/?linkid=2088639`** に移動して EDM ダウンロード エージェントにアクセスします。
+1. **Client 1 VM** で **Microsoft Edge** を起動し、**`https://go.microsoft.com/fwlink/?linkid=2088639`** に移動して EDM ダウンロード エージェントにアクセスします。
 
 1. ダウンロードが完了したら、Microsoft Edge ブラウザー ウィンドウで **[Open File]** を選択して、**Microsoft Exact Data Match Upload Agent Setup** ウィザードを開きます。
 
@@ -257,7 +257,7 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 
 1. **Pick an account** ウィンドウが表示されたら、`JoniS@WWLxZZZZZZ.onmicrosoft.com` としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
 
-1. ターミナル ウインドウに戻り、以下のスクリプトを PowerShell で実行して、EDB ベースの分類による秘密情報の種類のデータベース スキーマの定義をダウンロードします: **DataStoreName** の場合、前のタスクから保存したスキーマ名を使用します。
+1. ターミナル ウインドウに戻り、以下のスクリプトを PowerShell で実行して、EDB ベースの分類による秘密情報の種類のデータベース スキーマの定義をダウンロードします: **DataStoreName** の値には、前のタスクから保存したスキーマ名を使用します。
 
     ``` powershell
     .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedbSchema /OutputDir "C:\Users\Admin\Documents\"
@@ -301,7 +301,7 @@ EDB ベースの分類による秘密情報の種類のためにデータベー�
 
 1. Microsoft Purview ポータルは、Microsoft Edge で EDM 分類子ページにある必要があります。 そうでない場合は、Microsoft Edge で `https://purview.microsoft.com` > **[ソリューション]** > **Information Protection** に移動します。
 
-1. 左サイドバーで、**[分類子]** を展開し、**[機密情報の種類]** を選択します。
+1. 左サイドバーで、**[分類子]** を展開し、**[Sensitive Info Types (classic)]** を選択します。
 
 1. **[+ 機密情報の種類を作成する]** を選択し、新しい機密情報タイプの構成を開きます。
 
@@ -382,7 +382,7 @@ EDB ベースの分類による秘密情報の種類のためにデータベー�
 
 1. Microsoft Edge で `https://purview.microsoft.com` > **[ソリューション]** > **Information Protection** に移動します。
 
-1. 左サイドバーで、**[分類子]** を展開し、**[機密情報の種類]** を選択します。
+1. 左サイドバーで、**[分類子]** を展開し、**[Sensitive Info Types (classic)]** を選択します。
 
 1. 右上の **[検索]** バーに、「`Contoso`」と入力し、Enter キーを押します。
 
