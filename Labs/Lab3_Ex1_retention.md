@@ -265,7 +265,7 @@ Teams メッセージを自動的に削除する前に 3 年間保持する静�
 
    ![アクション メニューを表示するための省略記号がある場所を示すスクリーンショット。](../Media/sharepoint-app-launcher.png)
 
-1. SharePoint ランディング ページで、「`Benefits`」を検索し、検索結果から **Benefits @ Contoso** を選択します。
+1. SharePoint ランディング ページで、「`Benefits`」を検索し(必要に応じて「結果をさらに表示」を選択し)、検索結果から **Benefits @ Contoso** を選択します。
 
 1. 左側のサイド バーで **[ドキュメント]** を選択します。
 
