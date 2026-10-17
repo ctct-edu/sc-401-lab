@@ -56,7 +56,55 @@ Contoso Ltd. の最近採用された情報セキュリティ管理者として�
 1. **Microsoft Edge** で、 **`https://purview.microsoft.com`** に移動します。
 1. **[サインイン]** ウィンドウが表示されたら、`JoniS@WWLxZZZZZZ.onmicrosoft.com` としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
 1. 新しい Microsoft Purview ポータルに関するメッセージが画面に表示されます。 **[Get Started]** を選択して、新しいポータルにアクセスします。
-1. 日本語表示に変更し、タイムゾーンを日本時間に変更してください。
+1. 以下の流れで、日本語表示/タイムゾーン日本に変更してください。
+
+   ------------------------
+
+   ​	画面右上の 歯車マーク をクリックし、表示される [Settings] メニューをクリックします。
+
+   ​	[Setting] の一覧から、 [Language and time zone] の [Change your language] をクリックします。
+
+   
+
+   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-2.png)
+
+   ​																																									
+
+   ​	[My Account] の [Settings ＆ Privacy] ページが表示されます。
+
+   ​	[Language] セクションの [Display Language] をクリックして、 [Change display language] をクリックします。
+
+   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-3.png)
+
+   ​	[Language] ページで [Japanese] を選択し、 [Select] をクリックします。
+
+   ​	[Display language and regional format will be updated to Japanese] とメッセージが表示されたら、 [Update] をクリックします。
+
+   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-4.png)
+
+   ​	[表示言語と地域設定が Japanese に更新されました。新しい言語を完全に適用するには、サインアウトする必要があります。] とメッセージが表示されたら、 [キャンセル] をクリックします。
+
+   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-5.png)
+
+   ​	[設定およびプライバシー] ページで、 [地域] の [タイムゾーン] - [タイムゾーンの変更] をクリックします。
+
+   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-6.png)
+
+   ​	[ (UTC ＋ 09:00)大阪、札幌、東京] を選択して、 [選択] をクリックします。
+
+   ​	Microsoft 365 ポータル の右上にあるイニシャルのアイコンをクリックしてから、 [sign out] をクリックしてサインアウトします。
+
+   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-7.png)
+
+   ​	サインアウトが完了したら、一度ブラウザーを×で閉じます。
+
+   ​	https://purview.microsoft.com に再度サインインします。
+
+   ​	日本語化されたことが確認できたら(少し時間がかかったり、再サインインを要することもあります)、手順を進めてください。						
+
+   ------------------------
+1. 左側のサイド バーから **[ソリューション]** を選択し、**[監査]** を選択します。
+
 1. 新しい Microsoft Purview ポータルのレイアウトとナビゲーションについて調べます。 完了したら、ブラウザー ウィンドウを開いたままにします。
 
 Joni Sherman として正常にサインインし、ラボを続行する準備ができました。
