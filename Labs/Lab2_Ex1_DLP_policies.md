@@ -147,7 +147,7 @@ Teams メッセージと共にメールをスキャンするようにポリシ�
 
 1. **[アカウントにサインイン]** ポップアップ ウィンドウで **Joni Sherman** (`JoniS@WWLxZZZZZZ.onmicrosoft.com`) としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
 
-   ※「Sign in to all apps and websites on this device?」ダイアログが出たら
+   ※「Sign in to all apps, websites, and services on this device?」ダイアログが出たら
 
      **[No, this app only]**  を選択してください。
 

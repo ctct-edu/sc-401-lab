@@ -16,15 +16,15 @@ Contoso Ltd. で情報セキュリティ管理者として新しく採用され�
 このタスクでは、Windows 11 デバイスをオンボードし、エンドポイント DLP ポリシーで保護されるようにします。
 
 1. **Client 2 VM (SC-401-CL2)** に **SC-401-CL2\admin** アカウントでログインします。
-1. Microsoft Edge を開き、**`https://purview.microsoft.com`** に移動して、**Joni Sherman** として Microsoft Purview ポータルにログインします。 `JoniS@WWLxZZZZZZ.onmicrosoft.com` としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
+1. Client 2 VM の Microsoft Edge を開き、**`https://purview.microsoft.com`** に移動して、**Joni Sherman** として Microsoft Purview ポータルにログインします。 `JoniS@WWLxZZZZZZ.onmicrosoft.com` としてサインインします (この ZZZZZZ は、ラボ ホスティング プロバイダーから提供された自分専用のテナント プレフィックスです)。 ユーザー アカウントのパスワードは、ラボ ホスティング プロバイダーから提供されます。
 1. 左側のサイドバーで **[設定]** を選択します。
-1. 左サイドバーで、**[デバイスのオンボーディング]** を展開し **[オンボーディング]** を選択します。
+1. 左サイドバーで、**[デバイスのオンボード]** を展開し **[オンボーディング]** を選択します。
 1. **オンボーディング**ページの **[デプロイ方法]** ドロップダウン メニューで **[ローカル スクリプト (最大 10 台のマシン用)]** を選択し、次に **[パッケージをダウンロード]** を選択します。
 1. **[ダウンロード]** ダイアログで、フォルダー アイコンを選択しします。
-1. ZIP ファイルを SC-401-CL2 の**デスクトップ**に解凍します。 **DeviceComplianceLocalOnboardingScript.cmd** という名前のスクリプトがあるはずです。
+1. ZIP ファイルを SC-401-CL2 の **Desktop** に解凍します。 **DeviceComplianceLocalOnboardingScript.cmd** という名前のスクリプトがあるはずです。
 1. デスクトップで、抽出した **DeviceComplianceLocalOnboardingScript.cmd** ファイルを右クリックし、**[Show more options]** 選択し、**[Properties]** を選択します。
 1. プロパティ ウィンドウの **[General]** タブの下部にある **[Security]** セクションで、**[Unblock]** を選択し、**[OK]** を選択してこの設定を保存します。
-1. デスクトップに戻り、**DeviceComplianceLocalOnboardingScript.cmd** ファイルを右クリックし、**[Run as administrator]** を選択します。 **[User Account Control]** ダイアログで、**[Yes]** を選択します。
+1. デスクトップに戻り、**DeviceCompylianceLocalOnboardingScript.cmd** ファイルを右クリックし、**[Run as administrator]** を選択します。 **[User Account Control]** ダイアログで、**[Yes]** を選択します。
 1. [コマンド プロンプト] スクリーンで、「**Y**」と入力して確認し、Enter キーを押します。
 1. スクリプトが完了すると、成功メッセージと、**[Press any key to continue . . .]** プロンプトが表示されます。 任意のキーを押して、コマンド ライン ウィンドウを閉じます。 オンボーディングが完了するのに、1 分ほどかかることがあります。
 1. [Start] メニューを開き、「`Access work or school`」を検索して選択します。
