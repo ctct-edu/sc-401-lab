@@ -133,7 +133,7 @@ Contoso Ltd. の情報セキュリティ管理者である Joni Sherman は、�
 
 1. 左側のサイドバーから **[ソリューション]** > **[Microsoft Information Protection]** を選択して、**Information Protection** に移動します。
 
-1. **[Microsoft Information Protection]** ページで、**[分類子]** を展開し、**[EDM 分類子]** を選択します。
+1. **[Microsoft Information Protection]** ページで、**[分類子]** を展開し、**[EDM classifiers (classic)]** を選択します。
 
 1. **[EDM 分類子]** ページで、**[+ EDM 分類子を作成する]** を選択します。
 
