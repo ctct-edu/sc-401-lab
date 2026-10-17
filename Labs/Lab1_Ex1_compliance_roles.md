@@ -66,7 +66,7 @@ Contoso Ltd. の最近採用された情報セキュリティ管理者として�
 
    
 
-   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-2.png)
+   ![[]](../Media/lab1-2.png)
 
    ​																																									
 
@@ -74,27 +74,27 @@ Contoso Ltd. の最近採用された情報セキュリティ管理者として�
 
    ​	[Language] セクションの [Display Language] をクリックして、 [Change display language] をクリックします。
 
-   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-3.png)
+   ![[]](../Media/lab1-3.png)
 
    ​	[Language] ページで [Japanese] を選択し、 [Select] をクリックします。
 
    ​	[Display language and regional format will be updated to Japanese] とメッセージが表示されたら、 [Update] をクリックします。
 
-   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-4.png)
+   ![[]](../Media/lab1-4.png)
 
    ​	[表示言語と地域設定が Japanese に更新されました。新しい言語を完全に適用するには、サインアウトする必要があります。] とメッセージが表示されたら、 [キャンセル] をクリックします。
 
-   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-5.png)
+   ![[]](../Media/lab1-5.png)
 
    ​	[設定およびプライバシー] ページで、 [地域] の [タイムゾーン] - [タイムゾーンの変更] をクリックします。
 
-   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-6.png)
+   ![[]](../Media/lab1-6.png)
 
    ​	[ (UTC ＋ 09:00)大阪、札幌、東京] を選択して、 [選択] をクリックします。
 
    ​	Microsoft 365 ポータル の右上にあるイニシャルのアイコンをクリックしてから、 [sign out] をクリックしてサインアウトします。
 
-   ![[]](C:/Users/z2115023/Documents/GitHub/sc-401-lab/Media/lab1-7.png)
+   ![[]](../Media/lab1-7.png)
 
    ​	サインアウトが完了したら、一度ブラウザーを×で閉じます。
 
